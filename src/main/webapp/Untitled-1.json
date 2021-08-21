@@ -1,0 +1,74 @@
+{
+    "firstName":"Ferris",
+    "lastName":"Wyllie",
+    "username":"fwyllie",
+    "password":"fAiE7tnRbry0",
+    "dob":"Oct 19, 1986",
+    "hireDate":"Dec 15, 2019",
+    "department":{
+        "id":3
+    },
+    "supervisor":{
+        "firstName":"Linc",
+        "lastName":"Tregunna",
+        "username":"ltregunna",
+        "password":"tsMBTR",
+        "dob":"Mar 3, 1977",
+        "hireDate":"Apr 6, 2019",
+        "department":{
+            "id":3
+        },
+        "benefitCoord":{
+            "firstName":"Dunstan",
+            "lastName":"Fielders",
+            "username":"dfielders",
+            "password":"5VpNsenb",
+            "dob":"Dec 27, 1971",
+            "hireDate":"Mar 25, 2019",
+            "department":{
+                "id":1
+            },
+            "id":1
+        },
+        "id":3
+    },
+    "benefitCoord":{
+        "firstName":"Wyllie",
+        "lastName":"Roakes",
+        "username":"wroakes",
+        "password":"awjYJr",
+        "dob":"Dec 8, 1977",
+        "hireDate":"Apr 25, 2020",
+        "department":
+        {
+            "id":1
+        },
+        "supervisor":
+        {
+            "firstName":"Dunstan",
+            "lastName":"Fielders",
+            "username":"dfielders",
+            "password":"5VpNsenb",
+            "dob":"Dec 27, 1971",
+            "hireDate":"Mar 25, 2019",
+            "department":
+            {
+                "id":1
+            },
+            "id":1
+        },
+        "benefitCoord":{
+            "firstName":"Dunstan",
+            "lastName":"Fielders",
+            "username":"dfielders",
+            "password":"5VpNsenb",
+            "dob":"Dec 27, 1971",
+            "hireDate":"Mar 25, 2019",
+            "department":{
+                "id":1
+            },
+            "id":1
+        },
+        "id":14
+    },
+    "id":10}

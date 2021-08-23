@@ -30,14 +30,13 @@ public class EmpController {
 
 	public Handler login = (context) -> {
 		log.debug(context.body());
-		Employee user;
 		Properties submission = gson.fromJson(context.body(), Properties.class);
 		String username = submission.getProperty("username");
 		String password = submission.getProperty("password");
 //		log.info(username=="");
 
 		if (username != "" || password != "") {
-			user = empSvc.getEmpByUsername(username);
+			Employee user = empSvc.getEmpByUsername(username);
 
 			if (user != null) {
 				boolean loginSuccessful = empSvc.login(user, password);

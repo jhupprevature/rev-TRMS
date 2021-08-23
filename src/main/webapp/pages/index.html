@@ -5,11 +5,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="../scripts/pageheader.js"></script>
+    <script src="../scripts/login.js"></script>
     <title>TRMS Login</title>
 </head>
 <body onload="loadPageHeader(); logout();">
-    <script src="pageheader.js"></script>
+    
     <div id="page-header"></div>
 
     <div class="container-fluid col-md-10 ">
@@ -19,21 +20,20 @@
             <input type="text" class="form-control" id="usernameInput"><br />
             <label class="form-label" for="passwordInput">Password:</label>
             <input type="password" class="form-control" id="passwordInput"><br />
-            <button type="button" class="btn btn-primary" onclick="login();">Login</button>
+            <button type="button" class="btn btn-primary" onclick="login();" id="loginBtn">Login</button>
         </div>
     </div>
 
     <script>
-        //Do things here to perform login
-        //access server
-        //let validLogin = empSvc.login(username, password);
-        //if !validLogin -> errorMsg, refreshPage
-        //      errorMsg should include (1) no user found, (2) password mismatch
-        //if validLogin -> load UserInfo page
-
-        
+        var input = document.getElementById("passwordInput");
+        input.addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                // console.log("Enter keyup");
+                event.preventDefault();
+                document.getElementById("loginBtn").click();
+            }
+        });
     </script>
-
     
 </body>
 </html>

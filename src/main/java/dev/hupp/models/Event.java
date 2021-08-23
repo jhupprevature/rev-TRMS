@@ -22,6 +22,10 @@ public class Event extends DBTable {
 //	@Column(name = "id")
 //	@GeneratedValue(strategy = GenerationType.IDENTITY)
 //	private int id;
+	
+	@Expose
+	@Column(name= "event_name", nullable = false)
+	private String eventName;
 
 	@Expose
 	@Column(name = "event_date", nullable = false)
@@ -63,9 +67,10 @@ public class Event extends DBTable {
 		super();
 	}
 
-	public Event(Date eventDate, Time eventTime, String eventLocation, String description, double cost, EventType eventType,
+	public Event(String eventName, Date eventDate, Time eventTime, String eventLocation, String description, double cost, EventType eventType,
 			GradingFormat gradingFormat, String passingGrade) {
 		super();
+		this.eventName = eventName;
 		this.eventDate = eventDate;
 		this.eventTime = eventTime;
 		this.eventLocation = eventLocation;
@@ -99,6 +104,14 @@ public class Event extends DBTable {
 //	public void setID(int id) {
 //		this.id = id;
 //	}
+	
+	public String getEventName() {
+		return eventName;
+	}
+	
+	public void setEventName(String eventName) {
+		this.eventName = eventName;
+	}
 
 	public Date getEventDate() {
 		return eventDate;
